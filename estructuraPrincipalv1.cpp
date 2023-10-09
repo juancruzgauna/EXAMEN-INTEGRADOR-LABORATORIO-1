@@ -17,8 +17,8 @@ int main(){
     cout << "CLUTCH" << endl;
     cout << "---------------------" << endl;
     cout << "1 - JUGAR" << endl;
-    cout << "2 - ESTADÍSTICAS" << endl;
-    cout << "3 - CRÉDITOS" << endl;
+    cout << "2 - ESTADÃSTICAS" << endl;
+    cout << "3 - CRÃ‰DITOS" << endl;
     cout << "---------------------" << endl;
     cout << "0 - SALIR" << endl;
     cout << endl;
@@ -33,13 +33,13 @@ int main(){
             cout << "CLUTCH" << endl;
             cout << "------------------------------------------------------------------------" << endl;
             cout << "Antes de comenzar deben registrar sus nombres: " << endl << endl;
-            cout << "¿Nombre? ";
+            cout << "Â¿Nombre? ";
             cin >> jugador1;
             cout << endl;
-            cout << "¿Nombre? ";
+            cout << "Â¿Nombre? ";
             cin >> jugador2;
             cout << endl;
-            cout << "¿Confirmar nombres? (S/N)" << endl;
+            cout << "Â¿Confirmar nombres? (S/N)" << endl;
             cin >> confirmarNombres;
             cout << "------------------------------------------------------------------------" << endl;
 
@@ -48,13 +48,13 @@ int main(){
             cout << "CLUTCH" << endl;
             cout << "------------------------------------------------------------------------" << endl;
             cout << "Antes de comenzar deben registrar sus nombres: " << endl << endl;
-            cout << "¿Nombre? ";
+            cout << "Â¿Nombre? ";
             cin >> jugador1;
             cout << endl;
-            cout << "¿Nombre? ";
+            cout << "Â¿Nombre? ";
             cin >> jugador2;
             cout << endl;
-            cout << "¿Confirmar nombres? (S/N)" << endl;
+            cout << "Â¿Confirmar nombres? (S/N)" << endl;
             cin >> confirmarNombres;
             cout << "------------------------------------------------------------------------" << endl;
 
@@ -71,13 +71,13 @@ int main(){
             }
         break;
 
-        //ESTADÍSTICAS
+        //ESTADÃSTICAS
 
         case 2:
 
         break;
 
-        //CRÉDITOS
+        //CRÃ‰DITOS
 
         case 3:
             cout << "Se muestran apellidos, nombres y legajos de intregantes del equipo" ;
@@ -86,7 +86,7 @@ int main(){
         //SALIR
 
         case 0:
-            cout << "¿Está seguro de que desea salir? (S para sí - N para no)" << endl;
+            cout << "Â¿EstÃ¡ seguro de que desea salir? (S para sÃ­ - N para no)" << endl;
             cin >> confirmarSalir;
 
             cout << endl;
@@ -99,7 +99,7 @@ int main(){
         break;
 
         default:
-            cout << endl << "No se ingresó un número válido en el menu principal, por favor ingrese nuevamente" << endl << endl;
+            cout << endl << "No se ingresÃ³ un nÃºmero vÃ¡lido en el menu principal, por favor ingrese nuevamente" << endl << endl;
             return main();
 
         break;
