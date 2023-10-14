@@ -47,7 +47,7 @@ int main()
 
         }
 
-        //Funcion para generar n˙meros aleatorios
+        //Funcion para generar n√∫meros aleatorios
 
         srand(time(0));
 
@@ -60,7 +60,7 @@ int main()
         //Declaro vectores de cartas y palos
 
         string carta[5] = {"10", "J", "Q", "K", "A"};
-        string palo[4] = {" de Picas ", " de Diamantes", " de Corazones ", " de TrÈboles "};
+        string palo[4] = {" de Picas ", " de Diamantes", " de Corazones ", " de Tr√©boles "};
 
         // Armo las cartas en la matriz combinando las cartas y los palos
 
@@ -119,8 +119,8 @@ int main()
         {
             do
             {
-                fila1 = (rand() % 5);             // Genera un n˙mero aleatorio entre 0 y 4
-                columna1 = (rand() % 4);             // Genera un n˙mero aleatorio entre 0 y 3
+                fila1 = (rand() % 5);             // Genera un n√∫mero aleatorio entre 0 y 4
+                columna1 = (rand() % 4);             // Genera un n√∫mero aleatorio entre 0 y 3
             }
             while (matrizElementos[fila1][columna1] != 0);   // Asegura que la carta no se haya tomado antes
 
@@ -143,8 +143,8 @@ int main()
         {
             do
             {
-                fila2 = (rand() % 5);             // Genera un n˙mero aleatorio entre 0 y 4
-                columna2 = (rand() % 4);           //Genera n˙mero aleatorio entre 0 y 3
+                fila2 = (rand() % 5);             // Genera un n√∫mero aleatorio entre 0 y 4
+                columna2 = (rand() % 4);           //Genera n√∫mero aleatorio entre 0 y 3
             }
             while (matrizElementos[fila2][columna2] != 0);   // Asegura que la carta no se haya tomado antes
 
@@ -283,14 +283,14 @@ int main()
 
     }
 
-    //ESTADÕSTICAS
+    //ESTAD√çSTICAS
 
     if(menuOpciones == 2){
 
         cout << "Aqui se muestran las estadisticas" << endl;
     }
 
-    //CR…DITOS
+    //CR√âDITOS
 
     if(menuOpciones == 3){
 
@@ -301,7 +301,7 @@ int main()
 
     if(menuOpciones == 0){
 
-        cout << "øEst· seguro de que desea salir? (S para sÌ - N para no)" << endl;
+        cout << "¬øEst√° seguro de que desea salir? (S para s√≠ - N para no)" << endl;
         cin >> confirmarSalir;
 
         cout << endl;
@@ -318,7 +318,7 @@ int main()
 
     if(menuOpciones != 1 && menuOpciones != 2 && menuOpciones != 3 && menuOpciones != 0){
 
-        cout << endl << "No se ingresÛ un n˙mero v·lido en el menu principal, por favor ingrese nuevamente" << endl << endl;
+        cout << endl << "No se ingres√≥ un n√∫mero v√°lido en el menu principal, por favor ingrese nuevamente" << endl << endl;
         return main();
     }
 
@@ -335,7 +335,7 @@ int main()
 
 //DEFINICION DE FUNCIONES
 
-//Defino funciÛn para desplegar el men˙ principal
+//Defino funci√≥n para desplegar el men√∫ principal
 void desplegarMenu()
 {
     cout << "+--------------------+" << endl;
@@ -348,9 +348,9 @@ void desplegarMenu()
     cout << "|                    |"<<endl;
     cout << "|  1 - JUGAR         |" << endl;
     cout << "|                    |"<<endl;
-    cout << "|  2 - ESTADÕSTICAS  |" << endl;
+    cout << "|  2 - ESTAD√çSTICAS  |" << endl;
     cout << "|                    |"<<endl;
-    cout << "|  3 - CR…DITOS      |" << endl;
+    cout << "|  3 - CR√âDITOS      |" << endl;
     cout << "|                    |"<<endl;
     cout << "|--------------------|" << endl;
     cout << "|                    |"<<endl;
@@ -359,7 +359,7 @@ void desplegarMenu()
     cout << "+--------------------+" << endl;
 
 }
-//Defino funciÛn para ingresar nombres de los jugadores
+//Defino funci√≥n para ingresar nombres de los jugadores
 string asignarNombres()
 {
     string namePlayer;
@@ -367,31 +367,31 @@ string asignarNombres()
     cout << "CLUTCH" << endl;
     cout << "------------------------------------------------------------------------" << endl;
     cout << "Antes de comenzar deben registrar sus nombres: " << endl << endl;
-    cout << "øNombre? ";
+    cout << "¬øNombre? ";
     cin >> namePlayer;
     return namePlayer;
 
 }
-// Defino funciÛn para confirmar nombres de los jugadores
+// Defino funci√≥n para confirmar nombres de los jugadores
 
 char confirmarNombresJugadores()
 {
     char confirmar;
 
-    cout << "øConfirmar nombres? (S/N)" << endl;
+    cout << "¬øConfirmar nombres? (S/N)" << endl;
     cin >> confirmar;
     cout << "------------------------------------------------------------------------" << endl;
     return confirmar;
 
 }
 
-// Defino funciÛn mezclar cartas
+// Defino funci√≥n mezclar cartas
 void mezclar(string cartas[], int tamanio)
 {
     srand(time(0));
     for (int n = 0; n < tamanio; n++)
     {
         int m = rand() % tamanio;
-        swap(cartas[n], cartas[m]); //implemento SWAP que recibe dos par·metros e intercambia el valor del uno por el otro.
+        swap(cartas[n], cartas[m]); //implemento SWAP que recibe dos par√°metros e intercambia el valor del uno por el otro.
     }
 }
