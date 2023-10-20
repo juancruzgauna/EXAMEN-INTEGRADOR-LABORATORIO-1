@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1697763563 source:c:\users\usuario\desktop\examen integrador laboratorio i\examenintegradorlabo1clutch\funciones.cpp
+	<iostream>
+	<locale.h>
+	<cstdlib>
+	<time.h>
+	<algorithm>
+
+1697760532 source:c:\users\usuario\desktop\examen integrador laboratorio i\examenintegradorlabo1clutch\main.cpp
+	<iostream>
+	<locale.h>
+	<cstdlib>
+	<time.h>
+	<algorithm>
+	"declaracionFunciones.h"
+
+1697760422 c:\users\usuario\desktop\examen integrador laboratorio i\examenintegradorlabo1clutch\declaracionfunciones.h
+
